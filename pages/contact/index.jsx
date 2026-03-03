@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { BsArrowRight } from "react-icons/bs";
+import { FiMapPin, FiMail, FiPhone } from "react-icons/fi";
 
 import { fadeIn } from "../../variants";
 import { useState } from "react";
@@ -27,8 +28,9 @@ const Contact = () => {
   return (
     <div className="h-full bg-primary/30">
       <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
-        {/* text & form */}
-        <div className="flex flex-col w-full max-w-[700px]">
+        <div className="w-full flex flex-col xl:flex-row gap-12 xl:gap-16">
+          {/* text & form */}
+          <div className="flex flex-col w-full xl:max-w-[600px]">
           {/* text */}
           <motion.h2
             variants={fadeIn("up", 0.2)}
@@ -111,6 +113,63 @@ const Contact = () => {
               />
             </button>
           </motion.form>
+        </div>
+
+        {/* office info */}
+        <motion.div
+          variants={fadeIn("up", 0.6)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className="flex flex-col w-full xl:w-auto gap-8 xl:gap-12"
+        >
+          <div className="h2 text-center xl:text-left mb-4">
+            Office <span className="text-accent">Info.</span>
+          </div>
+
+          {/* address */}
+          <div className="flex gap-x-4 items-start text-center xl:text-left">
+            <div className="text-3xl text-accent min-w-fit">
+              <FiMapPin aria-hidden />
+            </div>
+            <div>
+              <div className="font-semibold mb-2">Address</div>
+              <p className="text-white/80 leading-relaxed">
+                Jakarta, Indonesia<br />
+                Available for events nationwide
+              </p>
+            </div>
+          </div>
+
+          {/* email */}
+          <div className="flex gap-x-4 items-start text-center xl:text-left">
+            <div className="text-3xl text-accent min-w-fit">
+              <FiMail aria-hidden />
+            </div>
+            <div>
+              <div className="font-semibold mb-2">Email</div>
+              <a 
+                href="mailto:cexohaji@gmail.com"
+                className="text-white/80 hover:text-accent transition-colors"
+              >
+                cexohaji@gmail.com
+              </a>
+            </div>
+          </div>
+
+          {/* phone */}
+          <div className="flex gap-x-4 items-start text-center xl:text-left">
+            <div className="text-3xl text-accent min-w-fit">
+              <FiPhone aria-hidden />
+            </div>
+            <div>
+              <div className="font-semibold mb-2">Available</div>
+              <p className="text-white/80">
+                +628555555555
+              </p>
+            </div>
+          </div>
+        </motion.div>
         </div>
       </div>
     </div>

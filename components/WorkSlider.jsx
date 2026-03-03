@@ -13,22 +13,22 @@ const workSlides = {
     {
       images: [
         {
-          title: "title",
+          title: "Music Festival",
           path: "/thumb1.jpg",
           link: "http://example.com",
         },
         {
-          title: "title",
+          title: "Brand Activation",
           path: "/thumb2.jpg",
           link: "http://example.com",
         },
         {
-          title: "title",
+          title: "Wedding Reception",
           path: "/thumb3.jpg",
           link: "http://example.com",
         },
         {
-          title: "title",
+          title: "Concert Event",
           path: "/thumb4.jpg",
           link: "http://example.com",
         },
@@ -37,22 +37,22 @@ const workSlides = {
     {
       images: [
         {
-          title: "title",
+          title: "Social Campaign",
           path: "/thumb4.jpg",
           link: "http://example.com",
         },
         {
-          title: "title",
+          title: "Community Event",
           path: "/thumb1.jpg",
           link: "http://example.com",
         },
         {
-          title: "title",
+          title: "Content Production",
           path: "/thumb2.jpg",
           link: "http://example.com",
         },
         {
-          title: "title",
+          title: "Festival Lineup",
           path: "/thumb3.jpg",
           link: "http://example.com",
         },

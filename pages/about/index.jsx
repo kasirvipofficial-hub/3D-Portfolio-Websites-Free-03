@@ -2,19 +2,16 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import CountUp from "react-countup";
 import {
-  FaCss3,
-  FaFigma,
-  FaHtml5,
-  FaJs,
-  FaReact,
-  FaWordpress,
+  FaCalendarAlt,
+  FaMusic,
+  FaPalette,
+  FaUsers,
+  FaInstagram,
+  FaYoutube,
+  FaTiktok,
+  FaMicrophone,
 } from "react-icons/fa";
-import {
-  SiAdobephotoshop,
-  SiAdobexd,
-  SiFramer,
-  SiNextdotjs,
-} from "react-icons/si";
+import { SiThreads } from "react-icons/si";
 
 import Avatar from "../../components/Avatar";
 import Circles from "../../components/Circles";
@@ -26,20 +23,16 @@ export const aboutData = [
     title: "skills",
     info: [
       {
-        title: "Web Development",
-        icons: [
-          FaHtml5,
-          FaCss3,
-          FaJs,
-          FaReact,
-          SiNextdotjs,
-          SiFramer,
-          FaWordpress,
-        ],
+        title: "Event Management & Production",
+        icons: [FaCalendarAlt, FaUsers, FaPalette],
       },
       {
-        title: "UI/UX Design",
-        icons: [FaFigma, SiAdobexd, SiAdobephotoshop],
+        title: "Content & Social Strategy",
+        icons: [FaInstagram, FaYoutube, FaTiktok, SiThreads],
+      },
+      {
+        title: "Music & Sound Production",
+        icons: [FaMusic, FaMicrophone],
       },
     ],
   },
@@ -47,12 +40,20 @@ export const aboutData = [
     title: "awards",
     info: [
       {
-        title: "Webby Awards - Honoree",
-        stage: "2011 - 2012",
+        title: "Best Event Curation Award",
+        stage: "2023",
       },
       {
-        title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
+        title: "Social Media Excellence Award",
+        stage: "2022",
+      },
+      {
+        title: "Content Creator of the Year",
+        stage: "2023",
+      },
+      {
+        title: "Music Production Recognition",
+        stage: "2021",
       },
     ],
   },
@@ -60,16 +61,20 @@ export const aboutData = [
     title: "experience",
     info: [
       {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
+        title: "Event Planner & Creative Director",
+        stage: "2020 - Present",
       },
       {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
+        title: "Social Media Strategist & Content Creator",
+        stage: "2018 - Present",
       },
       {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
+        title: "Sound Engineer & Music Producer",
+        stage: "2015 - Present",
+      },
+      {
+        title: "Community Manager & Brand Activations",
+        stage: "2018 - 2020",
       },
     ],
   },
@@ -77,16 +82,20 @@ export const aboutData = [
     title: "credentials",
     info: [
       {
-        title: "Web Development - ABC University, LA, CA",
-        stage: "2011",
+        title: "Event Management Certification",
+        stage: "2020",
       },
       {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
+        title: "Content Marketing & Social Media Strategy",
+        stage: "2019",
       },
       {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
+        title: "Music Production & Audio Engineering",
+        stage: "2017",
+      },
+      {
+        title: "Brand Activations & Community Building",
+        stage: "2018",
       },
     ],
   },
@@ -120,8 +129,8 @@ const About = () => {
             exit="hidden"
             className="h2"
           >
-            Captivating <span className="text-accent">stories</span> birth
-            magnificent designs.
+            Orchestrating <span className="text-accent">Unforgettable</span>
+            Moments.
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.4)}
@@ -129,9 +138,7 @@ const About = () => {
             animate="show"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            10 years ago, I begin freelancing as a developer. Since then, I've
-            done remote work for agencies, consulted for startups, and
-            collabrated on digital products for business and consumer use.
+            From intimate gatherings to massive festivals, I've orchestrated seamless experiences across concerts, brand activations, digital content, and social campaigns. Combining strategic vision with flawless execution, every event tells a story that resonates.
           </motion.p>
 
           {/* counters */}
@@ -148,7 +155,7 @@ const About = () => {
                   <CountUp start={0} end={10} duration={5} />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Years of experience.
+                  Years of event experience.
                 </div>
               </div>
 
@@ -158,7 +165,7 @@ const About = () => {
                   <CountUp start={0} end={250} duration={5} />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Satisfied clients.
+                  Events & activations produced.
                 </div>
               </div>
 
@@ -168,7 +175,7 @@ const About = () => {
                   <CountUp start={0} end={650} duration={5} />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Finished projects.
+                  Engaged community members.
                 </div>
               </div>
 
@@ -178,7 +185,7 @@ const About = () => {
                   <CountUp start={0} end={8} duration={5} />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Winning awards.
+                  Award recognition.
                 </div>
               </div>
             </div>
@@ -208,25 +215,29 @@ const About = () => {
             ))}
           </div>
 
-          <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
+          <div className="py-2 xl:py-6 flex flex-col gap-y-4 xl:gap-y-6 items-center xl:items-start w-full">
             {aboutData[index].info.map((item, itemI) => (
               <div
                 key={itemI}
-                className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-center text-white/60"
+                className="w-full flex flex-col xl:flex-row xl:justify-between xl:items-start gap-y-2 xl:gap-x-4 text-center xl:text-left"
               >
-                {/* title */}
-                <div className="font-light mb-2 md:mb-0">{item.title}</div>
-                <div className="hidden md:flex">-</div>
-                <div>{item.stage}</div>
-
-                <div className="flex gap-x-4">
-                  {/* icons */}
-                  {item.icons?.map((Icon, iconI) => (
-                    <div key={iconI} className="text-2xl text-white">
-                      <Icon />
-                    </div>
-                  ))}
+                <div className="flex-1">
+                  {/* title */}
+                  <div className="font-light text-white mb-1">{item.title}</div>
+                  {/* stage */}
+                  <div className="text-sm text-white/60">{item.stage}</div>
                 </div>
+
+                {/* icons */}
+                {item.icons && item.icons.length > 0 && (
+                  <div className="flex gap-x-4 justify-center xl:justify-start">
+                    {item.icons.map((Icon, iconI) => (
+                      <div key={iconI} className="text-2xl text-white">
+                        <Icon />
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
             ))}
           </div>

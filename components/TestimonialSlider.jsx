@@ -10,24 +10,31 @@ import "swiper/css/pagination";
 const testimonialData = [
   {
     image: "/t-avt-1.png",
-    name: "Anne Smith",
-    position: "Customer",
+    name: "Rini Wijaya",
+    position: "Marketing Head, Kapal Api",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
-  },
-  {
-    image: "/t-avt-2.png",
-    name: "Jane Doe",
-    position: "Customer",
-    message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "The event execution was flawless. From concept to activation booth setup, everything was handled professionally. The team's attention to detail made our brand shine at the festival.",
   },
   {
     image: "/t-avt-3.png",
-    name: "Jhon Doe",
-    position: "Customer",
+    name: "Budi Santoso",
+    position: "Event Manager, Pertamina",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "Exceptional corporate event management. The music curation, sound quality, and overall ambiance at Padma Resort Legian exceeded our expectations. Highly recommended.",
+  },
+  {
+    image: "/t-avt-2.png",
+    name: "Siti Rahman",
+    position: "Brand Director, PT. Santos Jaya Abadi",
+    message:
+      "Innovative social media campaigns combined with live event activation. Their understanding of audience engagement helped boost our brand visibility significantly.",
+  },
+  {
+    image: "/t-avt-3.png",
+    name: "Ahmad Hidayat",
+    position: "Community Manager, Festival Jakarta",
+    message:
+      "Outstanding community building and event orchestration. The integrated approach to marketing created memorable moments that resonated with attendees.",
   },
 ];
 

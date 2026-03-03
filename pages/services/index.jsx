@@ -22,7 +22,7 @@ const Services = () => {
               exit="hidden"
               className="h2 xl:mt-8"
             >
-              My services <span className="text-accent">.</span>
+              My <span className="text-accent">services.</span>
             </motion.h2>
             <motion.p
               variants={fadeIn("up", 0.4)}
@@ -31,8 +31,7 @@ const Services = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-              tempora eligendi, quisquam tempore sint reiciendis.
+              From concept to execution, I deliver comprehensive event solutions that create lasting impressions and build meaningful connections with your audience.
             </motion.p>
           </div>
 

@@ -20,8 +20,8 @@ const Home = () => {
             exit="hidden"
             className="h1"
           >
-            Transforming Ideas <br /> Into{" "}
-            <span className="text-accent">Digital Reality</span>
+            Turn Noise Into <br />{" "}
+            <span className="text-accent">Movements</span>
           </motion.h1>
 
           {/* subtitle */}
@@ -32,10 +32,7 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate,
-            exercitationem harum, quia nulla temporibus deleniti libero veniam
-            vero beatae numquam ducimus illum ab similique ipsam tempore fugit
-            quod laudantium debitis.
+            Event planner. Creative strategist. Content architect. Musician. I orchestrate unforgettable experiences across digital and real spaces. Bold ideas, unconventional execution, amplified impact.
           </motion.p>
 
           {/* btn */}
